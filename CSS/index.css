@@ -1,0 +1,239 @@
+/* Reset e fonte */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+/* Header */
+.header-image-container {
+    position: relative;
+    width: 100%;
+}
+
+.header-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.header-image-container .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,123,255,0.6), rgba(0,123,255,0.4));
+}
+
+.header-image-container .text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+/* Main content */
+.main-content {
+    padding: 5%;
+    text-align: center;
+    flex: 1;
+}
+
+/* Seções principais */
+section {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+/* Estatísticas */
+section.bg-light.text-center {
+    position: relative;
+    z-index: 1;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.counter {
+    font-size: 2.5rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+}
+
+/* Depoimentos */
+#depoimentosCarousel {
+    margin-top: 2rem;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+/* Cards mais modernos */
+.card {
+    border-radius: 1rem;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* Botões */
+.btn-lg {
+    border-radius: 50px;
+    padding: 0.75rem 2rem;
+    font-weight: 600;
+}
+
+/* Footer */
+footer {
+    background: #0d5eaa;
+    color: #fafafa;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+footer .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1200px;
+}
+
+footer .content p {
+    text-align: center;
+    width: 100%;
+    max-width: 80%;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #e0e0e0;
+}
+
+footer .content .sm,
+footer .content .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer .content .sm li {
+    margin: 1%;
+}
+
+footer .content .links li {
+    margin: 0 1%;
+    margin-bottom: 0.8rem;
+}
+
+footer .content .links li a,
+footer .content .sm li a {
+    color: #fafafa;
+    transition: 0.3s ease;
+    text-decoration: none; 
+}
+
+footer .content .sm li a {
+    font-size: 1.2rem;
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #0d5eaa;
+    line-height: 1;
+    transition: all 0.3s ease;
+}
+
+footer .content .sm li a:hover {
+    background: #61bae4;
+    transform: scale(1.2);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+footer .content .links li a:hover {
+    opacity: 0.7;
+}
+
+footer .copyright {
+    text-align: center;
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    width: 100%;
+    border-top: 0.0625rem solid rgba(255, 255, 255, 0.3);
+    font-size: 1rem;
+}
+
+/* Media queries */
+@media screen and (max-width: 768px) {
+    footer .content .logo {
+        font-size: 2.8rem;
+    }
+    
+    footer .content p {
+        max-width: 90%;
+        font-size: 1rem;
+    }
+    
+    footer .content .sm li a {
+        font-size: 1.6rem;
+        padding: 0.4rem;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer .content .logo {
+        font-size: 2.2rem;
+    }
+    
+    footer .content p {
+        max-width: 95%;
+        font-size: 0.95rem;
+    }
+    
+    footer .content .sm li a {
+        font-size: 1.4rem;
+    }
+    
+    footer .content .links {
+        flex-direction: column;
+    }
+    
+    footer .content .links li {
+        margin-bottom: 0.5rem;
+    }
+    
+    h1 {
+        font-size: 1.8rem;
+    }
+}
