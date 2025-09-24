@@ -1,3 +1,6 @@
+.bg-custom-blue {
+    background-color: #0d5eaa; /* A mesma cor do seu rodapé! */
+}
  * {
       margin: 0;
       padding: 0;
@@ -20,7 +23,6 @@
     }
     
     .navbar {
-      background-color: rgba(33, 37, 41, 0.9) !important;
       padding: 0.8rem 1rem;
     }
     

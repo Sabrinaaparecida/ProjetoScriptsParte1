@@ -1,3 +1,7 @@
+.bg-custom-blue {
+    background-color: #0d5eaa; /* A mesma cor do seu rodapé! */
+}
+
 .profile-pic {
   width: 20%;         /* largura proporcional ao container */
   aspect-ratio: 1/1;  /* mantém sempre quadrado */
