@@ -30,7 +30,7 @@
     <main class="container my-5">
         <h1 class="text-center mb-4">Preencha seu Currículo</h1>
 
-        <form action="#" method="post">
+        <form id="curriculo-form" action="#" method="post" novalidate>
             <div class="card shadow mb-4">
                 <div class="card-header">
                     Informações Pessoais
@@ -42,8 +42,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="cpf" class="form-label">CPF</label>
-                        <input type="text" class="form-control" id="cpf" name="cpf" required onblur="validarCPF(this.value)">
-                        <div id="feedback-cpf" class="text-danger small mt-1"></div>
+                        <input type="text" class="form-control" id="cpf" name="cpf" required onblur="checarCPF(this)" placeholder="000.000.000-00" maxlength="14">
+                        <div id="feedback-cpf" class="invalid-feedback small mt-1">CPF inválido. Por favor, verifique os dígitos.</div>
                     </div>
                     <div class="row">
                         <div class="col-md-6 mb-3">
@@ -52,7 +52,7 @@
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="telefone" class="form-label">Telefone</label>
-                            <input type="text" class="form-control" id="telefone" name="telefone" required>
+                            <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
                         </div>
                     </div>
                     <div class="row">
@@ -123,8 +123,8 @@
                             <label class="form-check-label" for="concluido">Concluído</label>
                         </div>
                          <div class="form-check">
-                            <input class="form-check-input" type="radio" name="status-curso" id="trancado" value="trancado">
-                            <label class="form-check-label" for="trancado">Trancado</label>
+                            <input class="form-check-input" type="radio" name="status-curso" id="nao-finalizado" value="nao-finalizado">
+                            <label class="form-check-label" for="nao-finalizado">Não Finalizado</label>
                         </div>
                     </div>
                 </div>
@@ -166,7 +166,7 @@
                         <input type="text" class="form-control" id="habilidade-input" placeholder="Ex: HTML, CSS, Trabalho em equipe">
                         <button class="btn btn-outline-primary" type="button" onclick="adicionarHabilidade()">Adicionar</button>
                     </div>
-                    <div id="habilidades-lista" aria-live="polite">
+                    <ul id="habilidades-lista" aria-live="polite">
                         </div>
                 </div>
             </div>
@@ -200,9 +200,24 @@
       &copy; <span id="year"></span> Portal de Oportunidades | All Rights Reserved
     </p>
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./JS/ano.js"></script>
-    <script src="./JS/adicionarHabilidade.js"></script>
-    <script src="./JS/validarCPF.js"></script>
+
+<div id="toast-container" class="toast-container position-fixed top-0 end-0 p-3">
+        <div id="toast-template" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <strong class="me-auto toast-title"></strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body"></div>
+        </div>
+    </div>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://unpkg.com/imask" defer></script>
+    <script src="./JS/formFeedback.js" defer></script>
+    <script src="./JS/ano.js" defer></script>
+    <script src="./JS/mascaras.js" defer></script>
+    <script src="./JS/adicionarHabilidade.js" defer></script>
+    <script src="./JS/validarCPF.js" defer></script>
+    
 </body>
 </html>
