@@ -12,16 +12,16 @@
 <body>
     <nav class="navbar navbar-dark bg-custom-blue">
         <div class="container-fluid">
-            <a class="navbar-brand" href="PaginaDeHome.html">Portal</a>
+            <a class="navbar-brand" href="PaginaDeHome.html">Portal de Oportunidades</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="PaginaDeHome.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
                     <li class="nav-item"><a class="nav-link" href="perfil.html">Perfil</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="Curriculo.html">Curriculo</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="Curriculo.html">Currículo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="Login.html">Login</a></li>
                 </ul>
             </div>
         </div>
@@ -49,10 +49,12 @@
                         <div class="col-md-6 mb-3">
                             <label for="email" class="form-label">Email</label>
                             <input type="email" class="form-control" id="email" name="email" required>
+                            <div id="feedback-email" class="invalid-feedback small mt-1">O formato do e-mail não é válido.</div>
                         </div>
                         <div class="col-md-6 mb-3">
                             <label for="telefone" class="form-label">Telefone</label>
                             <input type="text" class="form-control" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+                            <div id="feedback-email" class="invalid-feedback small mt-1">O formato do telefone não é válido.</div>
                         </div>
                     </div>
                     <div class="row">

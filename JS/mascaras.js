@@ -17,7 +17,25 @@ document.addEventListener('DOMContentLoaded', function() {
             ]
         };
         const telefoneMask = IMask(telefoneInput, telefoneMaskOptions);
-    }
+        
+        telefoneInput.addEventListener('input', function() {
+        // Remove feedback anterior
+        telefoneInput.classList.remove('is-valid', 'is-invalid');
+
+        // Pega apenas os números digitados (remove parênteses, traço, espaços)
+        const numero = telefoneInput.value.replace(/\D/g, '');
+
+        if (numero.length > 0) {
+            if (numero.length === 10 || numero.length === 11) {
+                // Número válido → borda verde
+                telefoneInput.classList.add('is-valid');
+            } else {
+                // Número incompleto ou inválido → borda vermelha
+                telefoneInput.classList.add('is-invalid');
+            }
+        }
+    });
+   }
 
     const emailInput = document.getElementById('email');
     if (emailInput) {

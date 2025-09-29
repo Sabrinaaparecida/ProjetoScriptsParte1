@@ -8,10 +8,10 @@ counters.forEach(counter => {
 
     if(count < target) {
       counter.innerText = Math.ceil(count + increment);
-      setTimeout(updateCount, 10);
+      setTimeout(updateCount, 15);
     } else {
       counter.innerText = target;
     }
   };
-  updateCount();
+  setTimeout(updateCount, 15);
 });
