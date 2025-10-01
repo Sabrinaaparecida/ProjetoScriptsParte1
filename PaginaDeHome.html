@@ -12,169 +12,222 @@
 
   <header>
     <nav class="navbar navbar-dark bg-custom-blue">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="PaginaDeHome.html">Portal de Oportunidades</a>
-
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="menu">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="PaginaDeHome.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="perfil.html">Perfil</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Curriculo.html">Currículo</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Login.html">Login</a>
-            </li>
-          </ul>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="PaginaDeHome.html">Portal de Oportunidades</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="PaginaDeHome.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="perfil.html">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Curriculo.html">Currículo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login.html">Login</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
     </nav>
-
     <div class="header-image-container">
-      <img src="./Images/2147993325.jpg" class="img-fluid" alt="Banner">
-      <div class="overlay"></div>
-      <div class="text-overlay">
-        <h1 class="fw-bold">Bem-vindo ao Portal de Oportunidades</h1>
-        <p>Conectando estudantes e empresas com vagas de estágio e emprego</p>
-      </div>
+        <img src="./Images/2147993325.jpg" class="img-fluid" alt="Banner">
+        <div class="overlay"></div>
+        <div class="text-overlay">
+            <h1 class="fw-bold">Bem-vindo ao Portal de Oportunidades</h1>
+            <p>Conectando estudantes e empresas com vagas de estágio e emprego</p>
+
+            <div class="mt-4 search-container">
+                <form action="/buscar-vagas" method="get" class="search-form">
+                    <div class="input-group">
+                        <input type="search" class="form-control form-control-lg" name="q" placeholder="Buscar por cargo, palavra-chave ou empresa..." aria-label="Campo de busca de vagas">
+                        <button class="btn btn-primary btn-lg" type="submit" aria-label="Buscar">
+                            <i class="las la-search"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            </div>
     </div>
-  </header>
-  
+</header>
 
-  <main class="container">
-    <h1>Bem-vindo ao Portal de Oportunidades</h1>
-    <p class="lead">Descubra oportunidades únicas todos os dias!</p>
-    <p class="lead">Mais de 500 vagas e 200 empresas parceiras esperando por você.</p>
-    <p>O mercado de trabalho está em constante transformação, e encontrar a vaga certa pode ser um desafio. Pensando nisso, criamos o Portal de Oportunidades, um espaço dedicado a conectar pessoas e empresas de forma simples, rápida e eficiente.
-    Aqui, você tem acesso a oportunidades de emprego em diversas áreas, desde posições para iniciantes até vagas para profissionais experientes. Nossa missão é aproximar talentos e organizações, ajudando candidatos a conquistarem seus objetivos e empresas a encontrarem o profissional ideal.</p>
-
-    <h1>Por que escolher o Portal de Oportunidades?</h1>
-    <li>Facilidade: Uma plataforma intuitiva, que coloca você a poucos cliques da sua próxima oportunidade.</li>
-    <li>Credibilidade: Trabalhamos em parceria com empresas sérias e comprometidas.</li>
-    <li>Apoio à sua trajetória: Nosso objetivo não é apenas oferecer vagas, mas ser um aliado no desenvolvimento da sua carreira.</li>
-
-    <div class="container my-5">
-      <div class="d-flex flex-wrap gap-3 justify-content-center">
-        
-        <!-- Card 1 -->
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Vagas atualizadas diariamente</h5>
-            <p class="card-text">Trabalhamos constantemente para reunir as melhores oportunidades em diferentes setores do mercado.</p>
-            <a href="#" class="card-link">Saiba mais</a>
-          </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Busca inteligente</h5>
-            <p class="card-text">Filtre as vagas por área, cargo, localização ou tipo de contrato e encontre a oportunidade que mais se encaixa no seu perfil.</p>
-            <a href="#" class="card-link">Saiba mais</a>
-          </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Gestão de candidaturas</h5>
-            <p class="card-text">Crie sua conta, envie currículos e acompanhe suas candidaturas de forma prática e centralizada.</p>
-            <a href="#" class="card-link">Saiba mais</a>
-          </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="card" style="width: 18rem;">
-          <div class="card-body">
-            <h5 class="card-title">Conteúdo para sua carreira</h5>
-            <p class="card-text">Além das vagas, você encontra artigos, dicas e materiais exclusivos para se preparar melhor para entrevistas, elaborar currículos atrativos e se destacar no mercado.</p>
-            <a href="#" class="card-link">Saiba mais</a>
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-    <!-- Estatísticas -->
-    <section class="py-5 bg-light text-center">
-      <div class="container">
-        <div class="row g-4">
-          <div class="col-md-4">
-            <h2 class="fw-bold text-primary counter" data-target="500">0</h2>
-            <p>Vagas publicadas</p>
-          </div>
-          <div class="col-md-4">
-            <h2 class="fw-bold text-primary counter" data-target="200">0</h2>
-            <p>Empresas parceiras</p>
-          </div>
-          <div class="col-md-4">
-            <h2 class="fw-bold text-primary counter" data-target="1000">0</h2>
-            <p>Estudantes cadastrados</p>
-          </div>
-        </div>
-      </div>
+  <main class="container my-5">
+    <section class="text-center intro-section">
+      <h2 class="fw-bold">Descubra oportunidades únicas todos os dias!</h2>
+      <p class="lead text-muted">Mais de 500 vagas e 200 empresas parceiras esperando por você.</p>
+      <p>O mercado de trabalho está em constante transformação. Nossa missão é conectar talentos e organizações, ajudando você a conquistar seus objetivos e as empresas a encontrarem o profissional ideal, de forma simples, rápida e eficiente.</p>
     </section>
 
-    <!-- Depoimentos -->
-    <section class="py-5 text-center">
-  <div class="container">
-    <h2 class="fw-bold mb-4">O que dizem nossos usuários</h2>
-    
-    <div id="depoimentosCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-
-        <div class="carousel-item active">
-          <div class="card p-4 shadow-sm mx-auto" style="max-width: 600px;">
-            <p>"Graças ao portal consegui meu primeiro estágio em tecnologia!"</p>
-            <small class="text-muted">— Ana, Estudante</small>
-          </div>
+    <section class="why-us-section my-5 py-5 bg-light rounded-3">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5">Por que escolher o Portal de Oportunidades?</h2>
+            <div class="row g-4">
+                <div class="col-md-4 d-flex">
+                    <div class="why-us-item">
+                        <div class="icon-circle mb-3 mx-auto">
+                            <i class="las la-briefcase"></i>
+                        </div>
+                        <h3 class="h5 fw-bold">Plataforma Intuitiva</h3>
+                        <p>Uma experiência simples que coloca você a poucos cliques da sua próxima oportunidade profissional.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="why-us-item">
+                        <div class="icon-circle mb-3 mx-auto">
+                            <i class="las la-building"></i>
+                        </div>
+                        <h3 class="h5 fw-bold">Empresas Confiáveis</h3>
+                        <p>Trabalhamos apenas com empresas sérias e comprometidas com o desenvolvimento de novos talentos.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex">
+                    <div class="why-us-item">
+                        <div class="icon-circle mb-3 mx-auto">
+                            <i class="las la-chart-line"></i>
+                        </div>
+                        <h3 class="h5 fw-bold">Apoio à sua Carreira</h3>
+                        <p>Não oferecemos apenas vagas, mas também conteúdos e dicas para impulsionar sua trajetória profissional.</p>
+                    </div>
+                </div>
+            </div>
         </div>
+    </section>
 
-        <div class="carousel-item">
-          <div class="card p-4 shadow-sm mx-auto" style="max-width: 600px;">
-            <p>"Encontrei talentos incríveis para minha empresa de forma rápida."</p>
-            <small class="text-muted">— João, RH</small>
-          </div>
+    <div class="container my-5" id="vagas">
+      <h2 class="fw-bold text-center mb-4">Explore Nossos Recursos</h2>
+      <div class="row g-4 justify-content-center">
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Vagas Atualizadas</h5>
+                    <p class="card-text flex-grow-1">Reunimos diariamente as melhores oportunidades em diversos setores do mercado para você.</p>
+                    <a href="#" class="card-link mt-auto">Saiba mais <i class="las la-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
-
-        <div class="carousel-item">
-          <div class="card p-4 shadow-sm mx-auto" style="max-width: 600px;">
-            <p>"Plataforma prática e fácil de usar. Recomendo muito!"</p>
-            <small class="text-muted">— Maria, Estagiária</small>
-          </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Busca Inteligente</h5>
+                    <p class="card-text flex-grow-1">Filtre as vagas por área, cargo ou localização e encontre a oportunidade ideal para seu perfil.</p>
+                    <a href="#" class="card-link mt-auto">Saiba mais <i class="las la-arrow-right"></i></a>
+                </div>
+            </div>
         </div>
-
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Gestão de Candidaturas</h5>
+                    <p class="card-text flex-grow-1">Crie sua conta, envie seu currículo e acompanhe suas candidaturas de forma prática e centralizada.</p>
+                    <a href="#" class="card-link mt-auto">Saiba mais <i class="las la-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="card h-100">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title fw-bold">Conteúdo para sua Carreira</h5>
+                    <p class="card-text flex-grow-1">Artigos e dicas para você se preparar para entrevistas e se destacar no mercado de trabalho.</p>
+                    <a href="#" class="card-link mt-auto">Saiba mais <i class="las la-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Próximo</span>
-      </button>
+    </div>
+
+    <section class="content-panel text-center">
+  <div class="container">
+    <div class="row g-4 align-items-center">
+
+      <div class="col-md-4">
+        <div class="stat-item">
+          <i class="las la-briefcase stats-icon"></i>
+          <h2 class="fw-bold text-primary counter" data-target="500">0</h2>
+          <p class="text-muted mb-0">Vagas publicadas</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-item">
+          <i class="las la-building stats-icon"></i>
+          <h2 class="fw-bold text-primary counter" data-target="200">0</h2>
+          <p class="text-muted mb-0">Empresas parceiras</p>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="stat-item">
+          <i class="las la-users stats-icon"></i>
+          <h2 class="fw-bold text-primary counter" data-target="1000">0</h2>
+          <p class="text-muted mb-0">Estudantes cadastrados</p>
+        </div>
+      </div>
+      
     </div>
   </div>
 </section>
 
-    <h1>Nosso convite</h1>
-    <p>Seja você um jovem em busca do primeiro emprego, um estudante procurando estágio, ou um profissional em busca de novos desafios, o Portal de Oportunidades está aqui para abrir portas.💡 Cadastre-se agora, explore as vagas e dê o próximo passo rumo ao seu futuro profissional. Porque toda grande conquista começa com uma oportunidade.</p>
-    
+
     <section class="py-5 text-center">
       <div class="container">
-        <h2 class="fw-bold">Pronto para dar o próximo passo na sua carreira?</h2>
-        <p class="lead">Cadastre-se agora e tenha acesso às melhores vagas do mercado.</p>
-        <a href="Curriculo.html" class="btn btn-success btn-lg">Quero me cadastrar</a>
+        <h2 class="fw-bold mb-4">O que dizem nossos usuários</h2>
+        <div id="depoimentosCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <figure class="mx-auto" style="max-width: 60%;">
+                <blockquote class="blockquote">
+                  <p>"Graças ao portal consegui meu primeiro estágio em tecnologia!"</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  Ana, <cite title="Posição">Estudante</cite>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+              <figure class="mx-auto" style="max-width: 60%;">
+                <blockquote class="blockquote">
+                    <p>"Encontrei talentos incríveis para minha empresa de forma rápida."</p>
+                </blockquote>
+                <figcaption class="blockquote-footer">
+                  João, <cite title="Posição">Recrutador de RH</cite>
+                </figcaption>
+              </figure>
+            </div>
+            <div class="carousel-item">
+                <figure class="mx-auto" style="max-width: 60%;">
+                  <blockquote class="blockquote">
+                    <p>"Plataforma prática e fácil de usar. Recomendo muito!"</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    Maria, <cite title="Posição">Estagiária</cite>
+                  </figcaption>
+                </figure>
+              </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#depoimentosCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+          </button>
+        </div>
       </div>
     </section>
+
+    <section class="py-5 text-center bg-custom-blue text-white rounded-3">
+        <div class="container">
+          <h2 class="fw-bold">Pronto para dar o próximo passo na sua carreira?</h2>
+          <p class="lead">Cadastre-se agora e tenha acesso às melhores vagas do mercado.</p>
+          <a href="Curriculo.html" class="btn btn-light btn-lg fw-bold mt-3">Quero me cadastrar</a>
+        </div>
+      </section>
   </main>
 
   <footer>
@@ -200,7 +253,7 @@
       &copy; <span id="year"></span> Portal de Oportunidades | All Rights Reserved
     </p>
   </footer>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./JS/ano.js"></script>
   <script src="./JS/contador.js"></script>
