@@ -5,7 +5,7 @@ Bem-vindo ao Portal de Oportunidades, um projeto front-end que simula uma plataf
 ## 👨‍💻 Autor
 Este projeto foi desenvolvido por **Sabrina Dias**.
 
-✨ Principais Funcionalidades
+## ✨ Principais Funcionalidades
 Interface Responsiva: O site é totalmente adaptado para uma experiência de uso consistente em desktops, tablets e celulares.
 
 Formulários Inteligentes: Formulários de login e currículo com validação em tempo real, máscaras para campos (CPF, telefone) e feedback visual instantâneo para o usuário.
