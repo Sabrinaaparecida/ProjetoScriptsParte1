@@ -16,7 +16,7 @@ Foco em Acessibilidade: Uso de HTML semântico (<section>, <main>, etc.) e atrib
 
 SEO Otimizado: Boas práticas de SEO on-page, como meta descriptions e hierarquia de títulos, foram implementadas para melhor ranqueamento.
 
-💻 Telas do Projeto
+##💻 Telas do Projeto
 O projeto conta com 4 telas principais:
 
 Home (PaginaDeHome.html): A página inicial, que apresenta o portal, seus recursos e depoimentos.
@@ -27,7 +27,7 @@ Currículo (Curriculo.html): Um formulário completo para o usuário preencher s
 
 Perfil (perfil.html): Página onde o usuário pode visualizar os dados do seu currículo já preenchido.
 
-🛠️ Tecnologias Utilizadas
+##🛠️ Tecnologias Utilizadas
 Este projeto foi construído utilizando as seguintes tecnologias:
 
 HTML5: Estruturação semântica do conteúdo.
@@ -42,7 +42,7 @@ Line-Awesome: Biblioteca de ícones.
 
 IMask.js: Biblioteca JavaScript para aplicar máscaras em campos de formulário.
 
-🚀 Como Executar o Projeto
+##🚀 Como Executar o Projeto
 Como este é um projeto puramente front-end, não é necessária nenhuma instalação complexa. Basta seguir os passos:
 
 Faça o download ou clone a pasta do projeto.
