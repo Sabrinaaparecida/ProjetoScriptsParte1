@@ -1,4 +1,5 @@
 Portal de Oportunidades oportunidades 🚀
+
 Bem-vindo ao Portal de Oportunidades, um projeto front-end que simula uma plataforma para conectar estudantes e empresas, facilitando a busca por vagas de estágio e emprego. O foco principal do projeto foi a criação de uma experiência de usuário (UX) fluida, uma interface (UI) agradável e a aplicação de boas práticas de desenvolvimento web.
 
 ## 👨‍💻 Autor
