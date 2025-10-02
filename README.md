@@ -12,7 +12,7 @@ Formulários Inteligentes: Formulários de login e currículo com validação em
 
 Componentes Dinâmicos: Elementos interativos como contadores animados, carrossel de depoimentos e um sistema de notificações "toast" para ações do usuário.
 
-Foco em Acessibilidade: Uso de HTML semântico (<section>, <main>, etc.) e atributos aria para garantir uma navegação clara para todos os usuários.
+Foco em Acessibilidade: Uso de HTML semântico e atributos aria para garantir uma navegação clara para todos os usuários.
 
 SEO Otimizado: Boas práticas de SEO on-page, como meta descriptions e hierarquia de títulos, foram implementadas para melhor ranqueamento.
 
